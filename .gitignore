@@ -1,0 +1,23 @@
+# Java / Spring Boot
+target/
+*.class
+*.jar
+*.war
+
+# Node / React
+node_modules/
+build/
+
+# OS junk
+.DS_Store
+__MACOSX/
+
+# IDEs
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+
+# Logs
+*.log
