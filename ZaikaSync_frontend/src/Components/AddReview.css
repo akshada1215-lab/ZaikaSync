@@ -1,0 +1,77 @@
+/* Page background */
+.review-page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f8f4;
+  padding: 1rem;
+}
+
+/* Card */
+.review-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem;
+  border: 2px solid #198754;
+}
+
+/* Title */
+.review-title {
+  text-align: center;
+  color: #198754;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* Label */
+.review-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Textarea */
+.review-textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 1rem;
+  resize: none;
+  background: #f9fff9;
+}
+
+.review-textarea:focus {
+  outline: none;
+  border-color: #198754;
+  box-shadow: 0 0 6px rgba(25, 135, 84, 0.4);
+}
+
+/* Button */
+.review-btn {
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #198754;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background: #157347;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .review-card {
+    padding: 1.5rem;
+  }
+}

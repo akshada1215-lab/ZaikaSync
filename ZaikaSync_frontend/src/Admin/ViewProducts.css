@@ -1,0 +1,131 @@
+.view-products-container {
+  max-width: 95%;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #198754;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 24px;
+}
+
+/* Responsive table wrapper */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* Table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product-table th {
+  background-color: #e9f7ef;
+  font-weight: 600;
+  color: #198754;
+}
+
+.product-table tr:hover {
+  background-color: #f9fff9;
+}
+
+/* Badges */
+.food-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.food-badge.veg {
+  background-color: #d4edda;
+  color: #198754;
+}
+
+.food-badge.nonveg {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+/* Status */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.available {
+  background-color: #d4edda;
+  color: #198754;
+}
+
+.status-badge.unavailable {
+  background-color: #f8d7da;
+  color: #dc3545;
+}
+
+/* Buttons */
+.action-col {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  padding: 6px 12px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.toggle-btn.disable {
+  background-color: #dc3545;
+  color: white;
+}
+
+.toggle-btn.enable {
+  background-color: #198754;
+  color: white;
+}
+
+.no-data {
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .view-products-container {
+    padding: 16px;
+    margin: 20px 10px;
+  }
+}

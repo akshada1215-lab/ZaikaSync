@@ -1,0 +1,74 @@
+
+.admin-navbar {
+  background-color: #198754; /* Zaika green */
+  height: 64px;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.admin-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+}
+
+.admin-logo:hover {
+  color: #d1e7dd !important;
+}
+
+/* Right nav layout */
+.admin-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* User badge */
+.admin-user-badge {
+  background-color: #ffffff;
+  color: #198754;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Logout button */
+.logout-btn {
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+@media (max-width: 768px) {
+
+  /* Hide text labels */
+  .nav-text {
+    display: none;
+  }
+
+  /* Compact buttons */
+  .admin-user-badge,
+  .logout-btn {
+    padding: 6px 8px;
+    font-size: 15px;
+  }
+
+  /* Bigger icons for touch */
+  .admin-navbar svg {
+    font-size: 20px;
+  }
+
+  /* Slightly smaller logo */
+  .admin-logo {
+    font-size: 1.4rem;
+  }
+}

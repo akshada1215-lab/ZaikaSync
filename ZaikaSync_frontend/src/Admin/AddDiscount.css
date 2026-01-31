@@ -1,0 +1,80 @@
+/* ===============================
+   ADD DISCOUNT – ADMIN PANEL
+   =============================== */
+
+.add-discount-container {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 2px solid #198754;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 22px;
+}
+
+.discount-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.discount-form label {
+  font-weight: 600;
+  color: #333;
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+.discount-form input {
+  width: 100%;
+  padding: 11px 14px;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: 1px solid #cfd8dc;
+  background-color: #f9fff9;
+}
+
+.discount-form input:focus {
+  outline: none;
+  border-color: #198754;
+  box-shadow: 0 0 8px rgba(25, 135, 84, 0.35);
+}
+
+.error-message {
+  margin-top: 12px;
+  color: #dc3545;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.submit-btn {
+  margin-top: 26px;
+  padding: 14px;
+  background: linear-gradient(135deg, #198754, #2ecc71);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 8px 18px rgba(25, 135, 84, 0.45);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .add-discount-container {
+    padding: 20px;
+    margin: 20px 12px;
+  }
+}

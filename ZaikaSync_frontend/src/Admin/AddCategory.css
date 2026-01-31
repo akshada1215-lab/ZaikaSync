@@ -1,0 +1,90 @@
+.add-category-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 15px;
+}
+
+.add-category-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  border: 2px solid #198754;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  color: #198754;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.add-category-card label {
+  font-weight: 600;
+  margin-top: 12px;
+  display: block;
+  color: #333;
+}
+
+.add-category-card input[type="text"],
+.add-category-card input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f9fff9;
+}
+
+.add-category-card input:focus {
+  outline: none;
+  border-color: #198754;
+  box-shadow: 0 0 6px rgba(25, 135, 84, 0.3);
+}
+
+.image-preview {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.image-preview img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #157347;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .add-category-card {
+    padding: 20px;
+  }
+}
+/*i have provided you all my frontend code now i want explanation of each code in detail why it is used how it works*/

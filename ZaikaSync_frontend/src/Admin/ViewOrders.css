@@ -1,0 +1,89 @@
+.view-orders-container {
+  max-width: 92%;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 2px solid #198754;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.view-orders-container h2 {
+  text-align: center;
+  color: #198754;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.orders-table {
+  min-width: 720px; 
+}
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.orders-table th {
+  background: #e9f7ef;
+  color: #145c32;
+  font-weight: 600;
+}
+
+.product-line {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.table-badge {
+  font-weight: 700;
+  color: #198754;
+}
+
+.status-dropdown {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #198754;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Status colors */
+.status-PLACED { background: #fff3cd; }
+.status-COOKING { background: #ffe5b4; }
+.status-READY { background: #d1ecf1; }
+.status-SERVED { background: #d4edda; }
+.status-COMPLETED { background: #c3e6cb; }
+.status-CANCELLED { background: #f8d7da; }
+
+@media (max-width: 768px) {
+  .orders-table {
+    font-size: 0.85rem;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 8px;
+  }
+}

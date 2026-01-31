@@ -1,0 +1,82 @@
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* EXACTLY 6 per row */
+  gap: 30px;
+  padding: 30px 40px;
+  justify-items: center; /* keeps alignment even if less items */
+}
+
+/* Category item */
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Bigger circular image */
+.category-image-wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f5f5f5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
+}
+
+/* Image inside circle */
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover effect */
+.category-item:hover .category-image-wrapper {
+  transform: scale(1.08);
+}
+
+/* Name */
+.category-name {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .category-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .category-image-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-image-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}

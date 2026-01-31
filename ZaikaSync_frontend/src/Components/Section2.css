@@ -1,0 +1,56 @@
+/* Wrapper – full width, 40% height */
+.section2-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+/* Image styling */
+.section2-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* prevents stretching */
+  display: block;
+}
+
+/* Text overlay */
+.section2-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%;
+}
+
+/* Heading */
+.section2-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #aeff00;
+}
+
+/* Paragraph */
+.section2-overlay p {
+  font-size: 1.1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .section2-wrapper {
+    height: 30vh;
+  }
+
+  .section2-overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .section2-overlay p {
+    font-size: 1rem;
+  }
+}

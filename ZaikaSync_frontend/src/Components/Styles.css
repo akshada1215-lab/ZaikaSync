@@ -1,0 +1,95 @@
+/* =========================
+   LOGO
+========================= */
+.logo-style {
+  font-family: "Brush Script MT";
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: transparent;
+  background: linear-gradient(to right, #aeff00, #aeff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* =========================
+   NAVBAR BASE
+========================= */
+.navbar {
+  height: 64px;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar .btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* =========================
+   MOBILE ICON-ONLY MODE
+========================= */
+@media (max-width: 768px) {
+
+  /* Hide text labels */
+  .nav-text {
+    display: none;
+  }
+
+  /* Make buttons compact */
+  .navbar .btn {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  /* Icons slightly larger for touch */
+  .navbar svg {
+    font-size: 15px;
+  }
+
+  /* Cart badge fix */
+  .position-relative .badge {
+    top: 4px;
+    right: 6px;
+    transform: none;
+  }
+}
+
+/* Make nav-item relative so dropdown anchors correctly */
+.navbar .nav-item.dropdown {
+  position: relative;
+}
+
+/* Force dropdown to float above content */
+.navbar .dropdown-menu {
+  position: absolute !important;
+  top: 110%;              /* below the profile button */
+  right: 0;
+  left: auto;
+  margin-top: 6px;
+  z-index: 2000;
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 768px) {
+  .navbar .dropdown-menu {
+    top: 120%;
+    min-width: 150px;
+  }
+}
+

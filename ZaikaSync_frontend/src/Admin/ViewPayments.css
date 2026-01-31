@@ -1,0 +1,114 @@
+
+.view-payments-container {
+  max-width: 92%;
+  margin: 32px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 2px solid #198754;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+.page-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 20px;
+}
+
+
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.payments-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+}
+
+
+.payments-table th {
+  background-color: #e6f4ea;
+  color: #14532d;
+  font-weight: 600;
+  padding: 12px;
+  border: 1px solid #cde5d6;
+  text-align: left;
+}
+
+
+.payments-table td {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+}
+
+
+.payments-table tr:nth-child(even) {
+  background-color: #f9fffb;
+}
+
+
+.payments-table tr:hover {
+  background-color: #eefaf3;
+}
+
+
+.amount {
+  font-weight: 600;
+  color: #198754;
+}
+
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.status-badge.paid {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-badge.pending {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.status-badge.failed {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+
+.no-data {
+  text-align: center;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 576px) {
+  .view-payments-container {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 1.3rem;
+  }
+}

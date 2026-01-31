@@ -1,0 +1,38 @@
+.auth-page {
+  min-height: calc(100vh - 64px); /* navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+  background: #fff;
+  border: 3px solid green;
+}
+
+.auth-btn {
+  background-color: #aeff00;
+  font-weight: 600;
+}
+
+.auth-btn:hover {
+  background-color: #9be000;
+}
+
+.auth-link {
+  text-decoration: none;
+  color: green;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+}

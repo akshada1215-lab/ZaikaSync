@@ -1,0 +1,171 @@
+/* ===============================
+   ADD PRODUCT – ZAIKASYNC ADMIN
+   =============================== */
+
+/* Wrapper inside Admin layout */
+.add-product-container {
+  max-width: 640px;
+  margin: 28px auto;
+  padding: 28px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 2px solid #198754;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.add-product-container .title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #198754;
+  margin-bottom: 24px;
+}
+
+/* Form */
+.product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.product-form label {
+  font-weight: 600;
+  color: #333;
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+/* Inputs */
+.product-form input,
+.product-form select,
+.product-form textarea {
+  width: 100%;
+  padding: 11px 14px;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  border: 1px solid #cfd8dc;
+  background-color: #f9fff9;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Focus state */
+.product-form input:focus,
+.product-form select:focus,
+.product-form textarea:focus {
+  outline: none;
+  border-color: #198754;
+  box-shadow: 0 0 8px rgba(25, 135, 84, 0.35);
+}
+
+/* Textarea */
+.product-form textarea {
+  resize: none;
+}
+
+/* ===============================
+   VEG / NON-VEG RADIO GROUP
+   =============================== */
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+/* Each option */
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #d1e7dd;
+  border-radius: 12px;
+  background-color: #f9fff9;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Radio button */
+.radio-option input {
+  margin: 0;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+/* Text */
+.radio-option span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Selected state */
+.radio-option:has(input:checked) {
+  border-color: #198754;
+  background-color: #e9f7ef;
+}
+
+/* ===============================
+   ERROR MESSAGE
+   =============================== */
+
+.error-message {
+  margin-top: 12px;
+  color: #dc3545;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ===============================
+   SUBMIT BUTTON
+   =============================== */
+
+.submit-btn {
+  margin-top: 26px;
+  padding: 14px;
+  background: linear-gradient(135deg, #198754, #2ecc71);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(25, 135, 84, 0.45);
+}
+
+.submit-btn:disabled {
+  background: #b5d8c4;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   MOBILE RESPONSIVENESS
+   =============================== */
+
+@media (max-width: 576px) {
+  .add-product-container {
+    padding: 20px;
+    margin: 20px 12px;
+    border-radius: 14px;
+  }
+
+  .add-product-container .title {
+    font-size: 1.4rem;
+  }
+
+  .radio-group {
+    flex-direction:row;
+    gap: 12px;
+  }
+
+  .radio-option {
+    width: 40%;
+  }
+}
